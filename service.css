@@ -1,0 +1,128 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f1f1f1;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background:white;
+  color: #000000;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-out;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.7rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li a {
+  color: #000000;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.nav-links li a:hover {
+  background-color: #ff7e5f;
+  transform: translateY(-5px);
+}
+
+/* Hero section */
+.hero {
+  background: url('pexels-photo-30059613.webp') no-repeat center center/cover;
+  align-items: center;
+  width: 1920;
+  align-content: flex-start;
+  height: 600;
+  color: #fff;
+  text-align: center;
+  padding: 5rem 2rem;
+  animation: fadeIn 1.5s ease-out;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  animation: slideIn 1.5s ease-out;
+}
+
+.btn-primary {
+  background-color: #ff7e5f;
+  color: #fff;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background-color 0.3s, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #feb47b;
+  transform: translateY(-3px);
+}
+.card {
+  border: none; 
+  border-radius: 12px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  background: linear-gradient(145deg, #ffffff, #f3f3f3);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(145deg, #f3f3f3, #ffffff); 
+}
+
+
+.card-img-top {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px; 
+  object-fit: cover; 
+  height: 200px; 
+}

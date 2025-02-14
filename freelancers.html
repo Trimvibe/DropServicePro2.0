@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Freelancers | DropServicePro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="freelancers.css">
+</head>
+<body>
+
+<!-- Header with Navigation Links -->
+<header class="header-main fixed-top">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <!-- Logo with Home Link -->
+            <a class="navbar-brand" href="index.html">
+                <img src="logo.png" alt="Logo" class="main-logo">
+            </a>
+
+            <!-- Mobile Toggle -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Main Navigation -->
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav mx-auto">
+                    <!-- Home -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+
+                    <!-- Find Talent Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                            Find Talent
+                            <i class="fas fa-chevron-down ms-1"></i>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="freelancers.html">Browse Freelancers</a>
+                            <a class="dropdown-item" href="agencies.html">Agencies</a>
+                            <a class="dropdown-item" href="post-project.html">Post a Project</a>
+                        </div>
+                    </li>
+
+                    <!-- Find Work Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                            Find Work
+                            <i class="fas fa-chevron-down ms-1"></i>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="jobs.html">Browse Jobs</a>
+                            <a class="dropdown-item" href="saved-jobs.html">Saved Jobs</a>
+                            <a class="dropdown-item" href="proposals.html">Proposals</a>
+                        </div>
+                    </li>
+
+                    <!-- Services -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                            Services
+                            <i class="fas fa-chevron-down ms-1"></i>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="service.html">All Services</a>
+                            <a class="dropdown-item" href="development.html">Development</a>
+                            <a class="dropdown-item" href="design.html">Design</a>
+                            <a class="dropdown-item" href="marketing.html">Marketing</a>
+                        </div>
+                    </li>
+
+                    <!-- Resources -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                            Resources
+                            <i class="fas fa-chevron-down ms-1"></i>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="blog.html">Blog</a>
+                            <a class="dropdown-item" href="guides.html">Guides</a>
+                            <a class="dropdown-item" href="community.html">Community</a>
+                        </div>
+                    </li>
+                </ul>
+
+                <!-- Auth Buttons -->
+                <div class="nav-auth d-flex align-items-center">
+                    <a href="login.html" class="btn btn-outline-primary me-2">Log In</a>
+                    <a href="signup.html" class="btn btn-primary">Sign Up</a>
+                    
+                    <!-- User Dropdown (show when logged in) -->
+                    <div class="dropdown user-dropdown d-none">
+                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                            <img src="avatar.jpg" alt="User" class="avatar-sm rounded-circle">
+                            <span class="ms-2">John Doe</span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="profile.html">
+                                <i class="fas fa-user me-2"></i>Profile</a></li>
+                            <li><a class="dropdown-item" href="dashboard.html">
+                                <i class="fas fa-tachometer-alt me-2"></i>Dashboard</a></li>
+                            <li><a class="dropdown-item" href="settings.html">
+                                <i class="fas fa-cog me-2"></i>Settings</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item text-danger" href="logout.html">
+                                <i class="fas fa-sign-out-alt me-2"></i>Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<br>
+<!-- Main Content -->
+<main class="py-5">
+    <div class="container">
+        <!-- Page Title -->
+        <div class="row mb-4">
+            <div class="col-12">
+                <h1 class="fw-bold mb-2">Find Expert Freelancers</h1>
+                <p class="text-secondary">Connect with talented professionals for your projects</p>
+            </div>
+        </div>
+
+        <!-- Top Search Bar -->
+        <div class="search-bar p-4 mb-4">
+            <div class="row g-3">
+                <div class="col-lg-4">
+                    <div class="input-group">
+                        <span class="input-group-text bg-transparent border-0">
+                            <i class="fas fa-search"></i>
+                        </span>
+                        <input type="text" class="form-control border-0" placeholder="Search by skill, name, or keyword">
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <select class="form-select">
+                        <option selected>Select Category</option>
+                        <option>Web Development</option>
+                        <option>Graphic Design</option>
+                        <option>Digital Marketing</option>
+                        <option>Content Writing</option>
+                    </select>
+                </div>
+                <div class="col-lg-3">
+                    <select class="form-select">
+                        <option selected>Experience Level</option>
+                        <option>Entry Level</option>
+                        <option>Intermediate</option>
+                        <option>Expert</option>
+                    </select>
+                </div>
+                <div class="col-lg-2">
+                    <button class="btn btn-primary w-100">Search</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content Area with Filters and Results -->
+        <div class="row">
+            <!-- Left Sidebar - Advanced Filters -->
+            <div class="col-lg-3">
+                <div class="filters-wrapper">
+                    <!-- Category Filter -->
+                    <div class="filter-box">
+                        <h5>Category</h5>
+                        <div class="category-list">
+                            <!-- Development & IT -->
+                            <div class="category-item">
+                                <div class="main-category">
+                                    <input type="checkbox" id="dev-it">
+                                    <label for="dev-it">Development & IT</label>
+                                    <span class="toggle-icon">+</span>
+                                </div>
+                                <div class="sub-categories">
+                                    <div class="sub-category">
+                                        <input type="checkbox" id="web-dev">
+                                        <label for="web-dev">Web Development</label>
+                                        <span>(1200)</span>
+                                    </div>
+                                    <div class="sub-category">
+                                        <input type="checkbox" id="mobile-dev">
+                                        <label for="mobile-dev">Mobile Development</label>
+                                        <span>(850)</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Design & Creative -->
+                            <div class="category-item">
+                                <div class="main-category">
+                                    <input type="checkbox" id="design">
+                                    <label for="design">Design & Creative</label>
+                                    <span class="toggle-icon">+</span>
+                                </div>
+                                <div class="sub-categories">
+                                    <div class="sub-category">
+                                        <input type="checkbox" id="graphic-design">
+                                        <label for="graphic-design">Graphic Design</label>
+                                        <span>(980)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hourly Rate Filter -->
+                    <div class="filter-box">
+                        <h5>Hourly Rate</h5>
+                        <div class="rate-slider">
+                            <input type="range" class="form-range" min="0" max="200" id="hourlyRate">
+                            <div class="rate-labels">
+                                <span>$0</span>
+                                <span>$200+</span>
+                            </div>
+                            <div class="current-rate">
+                                Current: $<span id="rateValue">50</span>/hr
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Job Success Score -->
+                    <div class="filter-box">
+                        <h5>Job Success Score</h5>
+                        <div class="success-filters">
+                            <div class="form-check">
+                                <input type="checkbox" id="90plus" class="form-check-input">
+                                <label for="90plus" class="form-check-label">90% Job Success & up</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" id="80plus" class="form-check-input">
+                                <label for="80plus" class="form-check-label">80% Job Success & up</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Earnings Filter -->
+                    <div class="filter-box">
+                        <h5>Earnings</h5>
+                        <div class="earnings-filters">
+                            <div class="form-check">
+                                <input type="checkbox" id="1k-plus" class="form-check-input">
+                                <label for="1k-plus" class="form-check-label">$1K+ earned</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" id="10k-plus" class="form-check-input">
+                                <label for="10k-plus" class="form-check-label">$10K+ earned</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side - Freelancer Listings -->
+            <div class="col-lg-9">
+                <!-- Sort Options -->
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <p class="mb-0">Showing 150 freelancers</p>
+                    <select class="form-select w-auto">
+                        <option>Most Relevant</option>
+                        <option>Highest Rated</option>
+                        <option>Newest First</option>
+                        <option>Lowest Rate</option>
+                        <option>Highest Rate</option>
+                    </select>
+                </div>
+
+                <!-- Freelancer Cards -->
+                <div class="row g-4">
+                    <!-- Freelancer Card -->
+                    <div class="col-md-6">
+                        <div class="freelancer-card">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-3">
+                                    <img src="https://via.placeholder.com/60" class="rounded-circle me-3" alt="Profile">
+                                    <div>
+                                        <h5 class="card-title mb-1">
+                                            Sumit karile
+                                            <i class="fas fa-check-circle verified-badge ms-2"></i>
+                                        </h5>
+                                        <p class="text-secondary mb-0">Senior Web Developer</p>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="rating-stars mb-2">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                        <span class="ms-2 text-secondary">(4.8)</span>
+                                    </div>
+                                    <p class="card-text">Full-stack developer with 8+ years of experience in MERN stack.</p>
+                                </div>
+                                <div class="mb-3">
+                                    <span class="skill-badge">JavaScript</span>
+                                    <span class="skill-badge">React</span>
+                                    <span class="skill-badge">Node.js</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="text-primary fw-bold">$65/hr</div>
+                                    <button class="btn btn-outline-primary">View Profile</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more freelancer cards here -->
+                    <div class="col-md-6">
+                        <div class="freelancer-card">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-3">
+                                    <img src="https://via.placeholder.com/60" class="rounded-circle me-3" alt="Profile">
+                                    <div>
+                                        <h5 class="card-title mb-1">
+                                            Sumit karile
+                                            <i class="fas fa-check-circle verified-badge ms-2"></i>
+                                        </h5>
+                                        <p class="text-secondary mb-0">Senior Web Developer</p>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="rating-stars mb-2">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                        <span class="ms-2 text-secondary">(4.8)</span>
+                                    </div>
+                                    <p class="card-text">back end developer with 6+ years of experience in Node stack.</p>
+                                </div>
+                                <div class="mb-3">
+                                    <span class="skill-badge">Node.js</span>
+                                    <span class="skill-badge">Android </span>
+                                    <span class="skill-badge">PHP</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="text-primary fw-bold">$35/hr</div>
+                                    <button class="btn btn-outline-primary">View Profile</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="freelancer-card">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-3">
+                                    <img src="https://via.placeholder.com/60" class="rounded-circle me-3" alt="Profile">
+                                    <div>
+                                        <h5 class="card-title mb-1">
+                                            Shubham Sirsul
+                                            <i class="fas fa-check-circle verified-badge ms-2"></i>
+                                        </h5>
+                                        <p class="text-secondary mb-0">Senior Web Developer</p>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="rating-stars mb-2">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                        <span class="ms-2 text-secondary">(4.8)</span>
+                                    </div>
+                                    <p class="card-text">Best professional video editor use Capcut.</video>.</p>
+                                </div>
+                                <div class="mb-3">
+                                    <span class="skill-badge">Capcut</span>
+                                    <span class="skill-badge">Editor</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="text-primary fw-bold">$65/hr</div>
+                                    <button class="btn btn-outline-primary">View Profile</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pagination -->
+                <nav class="mt-5">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1">Previous</a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+    <p>&copy; 2025 DropServicePro. All Rights Reserved.</p>
+    <div class="social-icons">
+        <a href="">Instagram</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Twitter</a>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    // Range slider value update
+    const hourlyRate = document.getElementById('hourlyRate');
+    const rateValue = document.getElementById('rateValue');
+    
+    if(hourlyRate && rateValue) {
+        hourlyRate.addEventListener('input', function() {
+            rateValue.textContent = this.value;
+        });
+    }
+
+    // Category toggle
+    document.querySelectorAll('.main-category').forEach(category => {
+        category.addEventListener('click', function() {
+            const subCategories = this.nextElementSibling;
+            const toggleIcon = this.querySelector('.toggle-icon');
+            
+            if(subCategories.style.display === 'none' || !subCategories.style.display) {
+                subCategories.style.display = 'block';
+                toggleIcon.textContent = '-';
+            } else {
+                subCategories.style.display = 'none';
+                toggleIcon.textContent = '+';
+            }
+        });
+    });
+    document.addEventListener('DOMContentLoaded', function() {
+        // Dropdown hover effect for desktop
+        if (window.innerWidth > 991) {
+            document.querySelectorAll('.navbar .dropdown').forEach(function(dropdown) {
+                dropdown.addEventListener('mouseenter', function() {
+                    this.querySelector('.dropdown-toggle').click();
+                });
+                
+                dropdown.addEventListener('mouseleave', function() {
+                    this.querySelector('.dropdown-toggle').click();
+                });
+            });
+        }
+    
+        // Active link handling
+        const currentLocation = location.href;
+        document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+            if (link.href === currentLocation) {
+                link.classList.add('active');
+            }
+        });
+    });
+    
+</script>
+</body>
+</html>

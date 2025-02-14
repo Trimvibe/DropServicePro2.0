@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - DropServicePro</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header class="header-main fixed-top">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <!-- Logo with Home Link -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="logo.png" alt="Logo" class="main-logo">
+                </a>
+    
+                <!-- Mobile Toggle -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <!-- Main Navigation -->
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav mx-auto">
+                        <!-- Home -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+    
+                        <!-- Find Talent Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                                Find Talent
+                                <i class="fas fa-chevron-down ms-1"></i>
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="freelancers.html">Browse Freelancers</a>
+                                <a class="dropdown-item" href="agencies.html">Agencies</a>
+                                <a class="dropdown-item" href="post-project.html">Post a Project</a>
+                            </div>
+                        </li>
+    
+                        <!-- Find Work Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                                Find Work
+                                <i class="fas fa-chevron-down ms-1"></i>
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="jobs.html">Browse Jobs</a>
+                                <a class="dropdown-item" href="saved-jobs.html">Saved Jobs</a>
+                                <a class="dropdown-item" href="proposals.html">Proposals</a>
+                            </div>
+                        </li>
+    
+                        <!-- Services -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                                Services
+                                <i class="fas fa-chevron-down ms-1"></i>
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="service.html">All Services</a>
+                                <a class="dropdown-item" href="development.html">Development</a>
+                                <a class="dropdown-item" href="design.html">Design</a>
+                                <a class="dropdown-item" href="marketing.html">Marketing</a>
+                            </div>
+                        </li>
+    
+                        <!-- Resources -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                                Resources
+                                <i class="fas fa-chevron-down ms-1"></i>
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="blog.html">Blog</a>
+                                <a class="dropdown-item" href="guides.html">Guides</a>
+                                <a class="dropdown-item" href="community.html">Community</a>
+                            </div>
+                        </li>
+                    </ul>
+    
+                    <!-- Auth Buttons -->
+                    <div class="nav-auth d-flex align-items-center">
+                        <a href="login.html" class="btn btn-outline-primary me-2">Log In</a>
+                        <a href="signup.html" class="btn btn-primary">Sign Up</a>
+                        
+                        <!-- User Dropdown (show when logged in) -->
+                        <div class="dropdown user-dropdown d-none">
+                            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                <img src="avatar.jpg" alt="User" class="avatar-sm rounded-circle">
+                                <span class="ms-2">John Doe</span>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="profile.html">
+                                    <i class="fas fa-user me-2"></i>Profile</a></li>
+                                <li><a class="dropdown-item" href="dashboard.html">
+                                    <i class="fas fa-tachometer-alt me-2"></i>Dashboard</a></li>
+                                <li><a class="dropdown-item" href="settings.html">
+                                    <i class="fas fa-cog me-2"></i>Settings</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item text-danger" href="logout.html">
+                                    <i class="fas fa-sign-out-alt me-2"></i>Logout</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <br>
+
+    <!-- Hero Section -->
+    <section class="hero-section position-relative" style="margin-top: 76px;">
+        <div class="hero-image position-absolute w-100 h-100" style="background: url('https://via.placeholder.com/1920x600') center/cover; filter: brightness(0.3);"></div>
+        <div class="container position-relative py-5 text-white" style="z-index: 1;">
+            <div class="row min-vh-50 align-items-center py-5">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold mb-4">Our Story</h1>
+                    <p class="lead mb-0">Building Digital Excellence Since 2020</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Overview -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <img src="https://th.bing.com/th/id/OIP.HgVPg4ueI4c9atxnDbjVtwHaE8?w=265&h=180&c=7&r=0&o=5&pid=1.7" alt="Company Overview" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="display-6 mb-4">Who We Are</h2>
+                    <p class="lead text-muted">DropServicePro is a leading digital service provider committed to delivering exceptional solutions for businesses worldwide.</p>
+                    <p>Founded in 2020, we've grown from a small team of passionate individuals to a full-service digital agency with global reach. Our mission is to help businesses thrive in the digital age through innovative solutions and strategic thinking.</p>
+                    <div class="row mt-4">
+                        <div class="col-6">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-check-circle text-primary me-2"></i>
+                                <span>500+ Projects Completed</span>
+                            </div>
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-check-circle text-primary me-2"></i>
+                                <span>98% Client Satisfaction</span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-check-circle text-primary me-2"></i>
+                                <span>24/7 Support</span>
+                            </div>
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-check-circle text-primary me-2"></i>
+                                <span>Global Reach</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Values -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Core Values</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="rounded-circle bg-primary text-white d-inline-flex align-items-center justify-content-center mb-4" style="width: 80px; height: 80px;">
+                                <i class="fas fa-star fa-2x"></i>
+                            </div>
+                            <h4>Excellence</h4>
+                            <p class="text-muted">We strive for excellence in every project we undertake, ensuring the highest quality deliverables.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="rounded-circle bg-primary text-white d-inline-flex align-items-center justify-content-center mb-4" style="width: 80px; height: 80px;">
+                                <i class="fas fa-handshake fa-2x"></i>
+                            </div>
+                            <h4>Integrity</h4>
+                            <p class="text-muted">We maintain the highest standards of integrity in all our business relationships.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="rounded-circle bg-primary text-white d-inline-flex align-items-center justify-content-center mb-4" style="width: 80px; height: 80px;">
+                                <i class="fas fa-lightbulb fa-2x"></i>
+                            </div>
+                            <h4>Innovation</h4>
+                            <p class="text-muted">We embrace innovation and creative thinking to solve complex challenges.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Meet Our Leadership Team</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm">
+                        <img src="https://via.placeholder.com/400x400" class="card-img-top" alt="Soham">
+                        <div class="card-body text-center">
+                            <h4 class="card-title mb-1">Soham</h4>
+                            <p class="text-muted mb-3">CEO & Founder</p>
+                            <div class="social-links">
+                                <a href="#" class="text-muted me-2"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" class="text-muted me-2"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm">
+                        <img src="https://via.placeholder.com/400x400" class="card-img-top" alt="Sumit">
+                        <div class="card-body text-center">
+                            <h4 class="card-title mb-1">Sumit</h4>
+                            <p class="text-muted mb-3">CTO</p>
+                            <div class="social-links">
+                                <a href="#" class="text-muted me-2"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" class="text-muted me-2"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm">
+                        <img src="https://via.placeholder.com/400x400" class="card-img-top" alt="Shubham Johnson">
+                        <div class="card-body text-center">
+                            <h4 class="card-title mb-1">Shubham Johnson</h4>
+                            <p class="text-muted mb-3">Lead Designer</p>
+                            <div class="social-links">
+                                <a href="#" class="text-muted me-2"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" class="text-muted me-2"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h2 class="display-4 fw-bold">500+</h2>
+                    <p class="mb-0">Projects Completed</p>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h2 class="display-4 fw-bold">200+</h2>
+                    <p class="mb-0">Happy Clients</p>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h2 class="display-4 fw-bold">50+</h2>
+                    <p class="mb-0">Team Members</p>
+                </div>
+                <div class="col-md-3">
+                    <h2 class="display-4 fw-bold">15+</h2>
+                    <p class="mb-0">Countries Served</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">Ready to Work Together?</h2>
+            <p class="lead mb-4">Let's create something amazing for your business</p>
+            <a href="index.html#contact" class="btn btn-primary btn-lg px-5">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>DropServicePro</h5>
+                    <p>Transforming businesses through digital excellence</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="social-icons">
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <p class="text-center mb-0">&copy; 2025 DropServicePro. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
